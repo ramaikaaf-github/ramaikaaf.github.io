@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="test.css">
+  </head>
+<body>
+
+  <header>
+    <!-- Navbar -->
+    <!-- Navbar logo -->
+    <section class="top-nav">
+    <div class="navbar-brand">
+      <img alt="QA Burger" src="img/QA Burger Logo 2.png" width="50" height="50">
+    </div>
+     
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li><a class="active" href="#home">Home</li></a>
+      <li>About</li>
+      <li><a href="#menu">Menu</li></a></li>
+      <li> <a href="#"><i class="fa fa-fw fa-search"></i></a></li>
+      <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true" fa-3x></i></a></li>
+    </ul></li>
+  </section>
+
+<div class="product-top-wrapper">
+<h1> Nick's Burger </h1>
+<body>Standard</body>
+<h2>$9.75</h2>
+</div>
+
+<div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+<div class="container-fluid bg-trasparent my-3 p-4" style="position: relative;  background-color: #F6C83B; border-radius: 10px; padding: 2.5rem!important; margin-bottom: 0rem!important;">
+        <div class="card-body">
+        <a href="#">
+          <img src="img/cajun-chicken.png" class="card-img-top" alt="Cajun Chicken" />
+        </a>
+       </div></div></div>
+
+<div class="product-order-info">
+  <!-- choice of buns -->
+  <div class="customize-grid">
+    <div class="customize-title-button">
+      <div class="customize-title">Choice of Buns</div>
+      <div class="customize-button">
+        <button class="dropbtn" onclick="test()">
+          <i class="fa fa-caret-down"></i>
+        </button>
+      </div>
+    </div>
+    <div class="customize-selection hidden">
+      <div class="ingredient-container">
+        <div class="ingredient-label">
+          <input type="radio" name="ingredient-buns" checked />
+          Plain Bun      
+        </div>
+        <div class="ingredient-price">
+          
+        </div>      
+      </div>
+
+      <div class="ingredient-container">
+        <div class="ingredient-label">
+          <input type="radio" name="ingredient-buns" />
+          Sesame Seed Bun
+        </div>
+        <div class="ingredient-price">
+          
+        </div>      
+      </div>
+
+      <div class="ingredient-container">
+        <div class="ingredient-label">
+          <input type="radio" name="ingredient-buns" />
+          Charcoal Bun 
+        </div>
+        <div class="ingredient-price">
+          +$0.35
+        </div>      
+      </div>
+
+      <div class="ingredient-container">
+        <div class="ingredient-label">
+          <input type="radio" name="ingredient-buns" />
+          Rice Bun 
+        </div>
+        <div class="ingredient-price">
+          +$0.75
+        </div>      
+      </div>
+    </div>
+  </div>
+
+<!-- choice of protein -->
+  <div class="customize-grid">
+    <div class="customize-title-button">
+      <div class="customize-title">Choice of Protein</div>
+      <div class="customize-button">
+        <button class="dropbtn" onclick="test2()">
+          <i class="fa fa-caret-down"></i>
+        </button>
+      </div>
+    </div>
+    <div class="customize-selectionsp hidden">
+      <div class="ingredient-container">
+        <div class="ingredient-label">
+          <input type="radio" name="ingredient-buns" checked />
+          AAA Beef
+        </div>
+        <div class="ingredient-price">
+          $1.95
+        </div>      
+      </div>
+
+      <div class="ingredient-container">
+        <div class="ingredient-label">
+          <input type="radio" name="ingredient-buns" />
+          Ground Beef
+        </div>
+        <div class="ingredient-price">
+          
+        </div>      
+      </div>
+
+      <div class="ingredient-container">
+        <div class="ingredient-label">
+          <input type="radio" name="ingredient-buns" />
+          Cajun Chicken
+        </div>
+        <div class="ingredient-price">
+          +$2.35
+        </div>      
+      </div>
+
+      <div class="ingredient-container">
+        <div class="ingredient-label">
+          <input type="radio" name="ingredient-buns" />
+        Plant Based
+        </div>
+        <div class="ingredient-price">
+          +$3.00
+        </div>      
+      </div>
+    </div>
+  </div>
+
+<!-- choice of veggies-->
+<div class="customize-grid">
+  <div class="customize-title-button">
+    <div class="customize-title">Choice of Veggies</div>
+    <div class="customize-button">
+      <button class="dropbtn" onclick="test3()">
+        <i class="fa fa-caret-down"></i>
+      </button>
+    </div>
+  </div>
+  <div class="customize-selectionv hidden">
+    <div class="ingredient-container">
+      <div class="ingredient-label">
+        <input type="radio" name="ingredient-buns" checked />
+        Lettuce    
+      </div>
+      <div class="ingredient-price">
+        
+      </div>      
+    </div>
+
+    <div class="ingredient-container">
+      <div class="ingredient-label">
+        <input type="radio" name="ingredient-buns" />
+        Tomato
+      </div>
+      <div class="ingredient-price">
+        
+      </div>      
+    </div>
+
+    <div class="ingredient-container">
+      <div class="ingredient-label">
+        <input type="radio" name="ingredient-buns" />
+        Mushroom
+      </div>
+      <div class="ingredient-price">
+        +$0.35
+      </div>      
+    </div>
+
+    <div class="ingredient-container">
+      <div class="ingredient-label">
+        <input type="radio" name="ingredient-buns" />
+        Pepper
+      </div>
+      <div class="ingredient-price">
+        +$0.35
+      </div>      
+    </div>
+
+    <div class="ingredient-container">
+      <div class="ingredient-label">
+        <input type="radio" name="ingredient-buns" />
+        Onions
+      </div>
+      <div class="ingredient-price">
+        
+      </div>      
+    </div>
+
+    <div class="ingredient-container">
+      <div class="ingredient-label">
+        <input type="radio" name="ingredient-buns" />
+        Spinach
+      </div>
+      <div class="ingredient-price">
+        +$0.35
+      </div>      
+    </div>
+
+    <div class="ingredient-container">
+      <div class="ingredient-label">
+        <input type="radio" name="ingredient-buns" />
+        Pickle
+      </div>
+      <div class="ingredient-price">
+        +$0.35
+      </div>      
+    </div>
+  </div>
+</div>
+
+<!-- choice of dairy -->
+<div class="customize-grid">
+  <div class="customize-title-button">
+    <div class="customize-title">Choice of Dairy</div>
+    <div class="customize-button">
+      <button class="dropbtn" onclick="test4()">
+        <i class="fa fa-caret-down"></i>
+      </button>
+    </div>
+  </div>
+  <div class="customize-selectiond hidden">
+    <div class="ingredient-container">
+      <div class="ingredient-label">
+        <input type="radio" name="ingredient-buns" checked />
+        American Cheese  
+      </div>
+      <div class="ingredient-price">
+        
+      </div>      
+    </div>
+
+    <div class="ingredient-container">
+      <div class="ingredient-label">
+        <input type="radio" name="ingredient-buns" />
+       Brie
+      </div>
+      <div class="ingredient-price">
+        +$0.25
+      </div>      
+    </div>
+
+    <div class="ingredient-container">
+      <div class="ingredient-label">
+        <input type="radio" name="ingredient-buns" />
+        Cheddar
+      </div>
+      <div class="ingredient-price">
+        
+      </div>      
+    </div>
+
+    <div class="ingredient-container">
+      <div class="ingredient-label">
+        <input type="radio" name="ingredient-buns" />
+        Monterey Jack
+      </div>
+      <div class="ingredient-price">
+        
+      </div>      
+    </div>
+
+    <div class="ingredient-container">
+      <div class="ingredient-label">
+        <input type="radio" name="ingredient-buns" />
+        Smoked Gouda
+      </div>
+      <div class="ingredient-price">
+        +0.35
+      </div>      
+    </div>
+
+  </div>
+</div>
+
+  <div class="submit-button-container">
+    <div>
+      <button>CANCEL</button>
+    </div>
+    <div>
+      <button><a href="deliverypage.html">ADD TO ORDER</a></button>
+    </div>
+
+  </div>
+</div>
+
+<section class="footer">
+  <img alt="QA Burger" src="img/QA Burger Logo 2.png" width="70" height="70">
+  <div class="social">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+  </div>
+  <ul class="list">
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">About</a>
+    </li>
+    <li>
+      <a href="#">Terms & Conditions</a>
+    </li>
+  </ul>
+   <div class="address">
+    <p> 497 Evergreen Rd. Roseville, CA 95673</p>
+  <p> +44 345 678 903</p>
+  <p> QAburger@email.com</p>
+  </div>
+  <div class="subscribe">
+  <p>Subscribe to our newsletter</p>
+  <form>
+  <input type="text" id="fname" name="fname" placeholder="Email" style="width: 100%; border-radius: 20px;">
+</form>
+</div>
+</section>
+
+
+<!-- script -->
+<script>
+let customizeselection = document.querySelector(".customize-selection")
+function test() {
+  customizeselection.classList.toggle("hidden");
+}
+
+let customizeselectionsp = document.querySelector(".customize-selectionsp")
+function test2() {
+  customizeselectionsp.classList.toggle("hidden");
+}
+
+let customizeselectionv = document.querySelector(".customize-selectionv")
+function test3() {
+  customizeselectionv.classList.toggle("hidden");
+}
+
+let customizeselectiond = document.querySelector(".customize-selectiond")
+function test4() {
+  customizeselectiond.classList.toggle("hidden");
+}
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+var scrolling;
+(window).scroll(function() {
+    clearTimeout(scrolling);//clear any existing timeout
+    $("#footer").hide();
+    scrolling = setTimeout(function(){$("#footer").show();},100);//set the timeout to hide the footer (will be cancelled if scrolling continues)
+})
+
+</script>
+ </body>
+</html>

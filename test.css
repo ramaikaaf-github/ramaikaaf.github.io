@@ -1,0 +1,133 @@
+.grid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.product-order-info {
+	display: grid;
+	box-sizing: border-box;
+	position: relative;
+	width: 100px;
+	margin-top: -120px;
+	margin-right: auto;
+	flex:  0 0 375px;
+	flex-grow: 0;
+	top: -190px;
+	padding: 65px 400px 1px;
+	float: right;
+
+}
+
+
+.customize-grid {
+	display:block;
+	position: relative;
+	margin-top: 90px;
+	padding: 5px;
+	overflow-x: hiiden;
+	float: right;
+	align-items: center;
+		
+}
+
+
+.customize-title-button {
+	display: flex;
+	flex-direction: row;
+	width:  400px;
+}
+
+.customize-title {
+	flex-basis: 80%;
+}
+
+.customize-button{
+	flex-basis: 20%;
+	
+}
+
+.hidden {
+	display: none;
+}
+
+.customize-selection {
+	border:  1px solid lightgray;
+	padding: 10px;
+	float: left;
+}
+
+.customize-selectionsp {
+	border:  1px solid lightgray;
+	padding: 10px;
+	float: left;
+}
+
+.customize-selectionv {
+	border:  1px solid lightgray;
+	padding: 10px;
+	float: left;
+}
+
+.customize-selectiond {
+	border:  1px solid lightgray;
+	padding: 10px;
+	float: left;
+}
+
+.product-top-wrapper {
+	float: right;
+	text-align: left;
+	margin-top: 15px;
+	padding: 60px 155px 1px;
+}
+
+.ingredient-container{
+	min-width: 325px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.submit-button-container{
+	width: 100%; 
+	display: flex;
+	margin-top: 25px;
+}
+
+.submit-button-container div{
+	width: 50%; 
+	text-align: center;	
+}
+
+.submit-button-container div button{
+	width: 90%; 	
+	border-radius: 10px;
+	border: none;
+	background-color: orange;
+	box-shadow: 5px 10px;
+	color: #ffffff;
+	padding: 10px 0px;
+	margin-right: 20px;
+}
+
+/* .ingredient-label{
+	background-color: #cccccc;
+}
+
+.ingredient-price{
+	background-color: #888888;
+} */
+
+/* @media (min-width: 992px) 
+ */
+
+
+
+
